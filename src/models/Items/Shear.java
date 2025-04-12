@@ -1,8 +1,9 @@
 package models.Items;
 
 import models.Item;
+import models.Tool;
 
-public class Shear implements Item {
+public class Shear extends Tool {
     private final int price;
     private final int energyNeeded;
 

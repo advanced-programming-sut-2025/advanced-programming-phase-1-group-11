@@ -1,8 +1,9 @@
 package models.Items;
 
 import models.Item;
+import models.Tool;
 
-public class MilkPail implements Item {
+public class MilkPail extends Tool {
     private final int price;
     private final int energyNeeded;
 
@@ -18,4 +19,5 @@ public class MilkPail implements Item {
     public int getEnergyNeeded() {
         return energyNeeded;
     }
+    public int getMaterial
 }

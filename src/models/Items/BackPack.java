@@ -2,12 +2,14 @@ package models.Items;
 
 import enums.Items.BackPackMaterial;
 import models.Item;
+import models.Tool;
 
 import java.util.ArrayList;
 
-public class BackPack implements Item {
+public class BackPack extends Tool {
     private final BackPackMaterial material;
     private final ArrayList<Item> items = new ArrayList<>();
+
 
     public BackPack(BackPackMaterial material) {
         this.material = material;

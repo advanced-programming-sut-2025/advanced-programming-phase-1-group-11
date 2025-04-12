@@ -2,8 +2,9 @@ package models.Items;
 
 import enums.Items.WateringCanMaterial;
 import models.Item;
+import models.Tool;
 
-public class WateringCan implements Item {
+public class WateringCan extends Tool {
     private final WateringCanMaterial material;
 
     public WateringCan(WateringCanMaterial material) {

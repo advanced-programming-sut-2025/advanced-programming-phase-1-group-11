@@ -2,8 +2,9 @@ package models.Items;
 
 import enums.Items.AxeMaterial;
 import models.Item;
+import models.Tool;
 
-public class Axe implements Item {
+public class Axe extends Tool {
     private AxeMaterial material;
 
     public Axe(AxeMaterial material) {
@@ -13,4 +14,5 @@ public class Axe implements Item {
     public AxeMaterial getMaterial() {
         return material;
     }
+
 }

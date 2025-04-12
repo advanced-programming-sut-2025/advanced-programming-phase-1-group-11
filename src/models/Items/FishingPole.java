@@ -2,8 +2,9 @@ package models.Items;
 
 import enums.Items.FishingPoleMaterial;
 import models.Item;
+import models.Tool;
 
-public class FishingPole implements Item {
+public class FishingPole extends Tool {
     private final FishingPoleMaterial material;
 
     public FishingPole(FishingPoleMaterial material) {
