@@ -1,0 +1,71 @@
+package models;
+
+import enums.Skills;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Player extends User {
+    private int gold;
+    private int energy;
+    private int maxEnergy;
+    private boolean death = false;
+    private final ArrayList<Item> inventory = new ArrayList<>();
+    private final HashMap<Skills, Integer> skills = new HashMap<Skills, Integer>();
+
+
+    public Player(String username, String hashedPassword, String nickname, Email email, boolean gender) {
+        super(username, hashedPassword, nickname, email, gender);
+        this.gold = 0;
+        this.energy = 200;
+        this.maxEnergy = 200;
+        skills.put(Skills.Farming, 0);
+        skills.put(Skills.Mining, 0);//MAX LEVEL TODO  PICKAXE
+        skills.put(Skills.Foraging, 0);//MAX LEVEL TODO  AXE
+        skills.put(Skills.Fishing, 0);
+    }
+
+    public void increaseSkill(Skills skillType, int xp) {
+        skills.put(skillType, skills.get(skillType) + xp);
+    }
+
+    public void changeGold(int gold) {
+        this.gold += gold;
+    }
+
+    public void changeEnergy(int energy) {
+        this.energy += energy;
+    }
+
+    public int getGold() {
+        return gold;
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public ArrayList<Item> getInventory() {
+        return inventory;
+    }
+
+    public int getSkillLevel(Skills skillType) {
+        return skills.get(skillType);
+    }
+
+    public void changeDeath(boolean death) {
+        this.death = death;
+    }
+
+    public boolean isDead() {
+        return death;
+    }
+
+    public int getMaxEnergy() {
+        return maxEnergy;
+    }
+
+    public void setMaxEnergy(int maxEnergy) {
+        this.maxEnergy = maxEnergy;
+    }
+}
