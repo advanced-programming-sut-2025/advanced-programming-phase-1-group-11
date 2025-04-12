@@ -19,5 +19,4 @@ public class MilkPail extends Tool {
     public int getEnergyNeeded() {
         return energyNeeded;
     }
-    public int getMaterial
 }
