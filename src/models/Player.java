@@ -1,6 +1,8 @@
 package models;
 
+import enums.Items.BackPackMaterial;
 import enums.Skills;
+import models.Items.BackPack;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +12,7 @@ public class Player extends User {
     private int energy;
     private int maxEnergy;
     private boolean death = false;
-    private final ArrayList<Item> inventory = new ArrayList<>();
+    public final BackPack backpack = new BackPack(BackPackMaterial.Default);
     private final HashMap<Skills, Integer> skills = new HashMap<Skills, Integer>();
 
 
@@ -43,10 +45,6 @@ public class Player extends User {
 
     public int getEnergy() {
         return energy;
-    }
-
-    public ArrayList<Item> getInventory() {
-        return inventory;
     }
 
     public int getSkillLevel(Skills skillType) {
