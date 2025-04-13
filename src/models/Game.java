@@ -1,6 +1,6 @@
 package models;
 
-import enums.Seasons;
+import enums.Season;
 import enums.Weather;
 
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Game {
     private final ArrayList<Player> players = new ArrayList<Player>();
     private Player currentPlayer;
-    private final Date date = new Date(1, Seasons.Spring, 1, true, 9, 0);
+    private final Date date = new Date(1, Season.Spring, 1, true, 9, 0);
     private final Map map = new Map(generateWeatherByDate(date));
 
     public Game(ArrayList<Player> players) {

@@ -4,7 +4,7 @@ import enums.Items.HoeMaterial;
 import models.Item;
 import models.Tool;
 
-public class Hoe extends Tool {
+public class Hoe implements Tool {
     private final HoeMaterial material;
 
     public Hoe(HoeMaterial material) {

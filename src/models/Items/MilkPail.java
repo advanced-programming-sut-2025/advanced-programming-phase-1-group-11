@@ -3,7 +3,7 @@ package models.Items;
 import models.Item;
 import models.Tool;
 
-public class MilkPail extends Tool {
+public class MilkPail implements Tool {
     private final int price;
     private final int energyNeeded;
 

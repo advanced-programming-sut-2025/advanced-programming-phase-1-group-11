@@ -4,7 +4,7 @@ import enums.Items.FishingPoleMaterial;
 import models.Item;
 import models.Tool;
 
-public class FishingPole extends Tool {
+public class FishingPole implements Tool {
     private final FishingPoleMaterial material;
 
     public FishingPole(FishingPoleMaterial material) {

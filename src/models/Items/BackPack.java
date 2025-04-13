@@ -6,7 +6,7 @@ import models.Tool;
 
 import java.util.ArrayList;
 
-public class BackPack extends Tool {
+public class BackPack implements Tool {
     private final BackPackMaterial material;
     private final ArrayList<Item> items = new ArrayList<>();
 

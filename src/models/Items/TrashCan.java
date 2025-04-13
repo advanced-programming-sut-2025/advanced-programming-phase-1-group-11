@@ -4,7 +4,7 @@ import enums.Items.TrashCanMaterial;
 import models.Item;
 import models.Tool;
 
-public class TrashCan extends Tool {
+public class TrashCan implements Tool {
     private final TrashCanMaterial material;
 
     public TrashCan(TrashCanMaterial material) {

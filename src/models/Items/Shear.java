@@ -3,7 +3,7 @@ package models.Items;
 import models.Item;
 import models.Tool;
 
-public class Shear extends Tool {
+public class Shear implements Tool {
     private final int price;
     private final int energyNeeded;
 

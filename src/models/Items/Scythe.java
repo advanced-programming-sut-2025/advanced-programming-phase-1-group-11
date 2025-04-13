@@ -4,7 +4,7 @@ import enums.Items.SeytheMaterial;
 import models.Item;
 import models.Tool;
 
-public class Scythe extends Tool {
+public class Scythe implements Tool {
     private final SeytheMaterial material;
 
     public Scythe(SeytheMaterial material) {
