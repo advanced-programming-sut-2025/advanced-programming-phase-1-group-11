@@ -1,5 +1,6 @@
 package models;
 
-public abstract class Tool implements Item{
+public interface Tool extends Item{
+
 
 }

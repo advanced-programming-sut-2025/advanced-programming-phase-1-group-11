@@ -1,16 +1,16 @@
 package models;
 
-import enums.Seasons;
+import enums.Season;
 
 public class Date {
     private int year;
-    private Seasons season;
+    private Season season;
     private int day;
     private boolean sunSine;
     private int hour;
     private int minute;
 
-    public Date(int year, Seasons season, int day, boolean sunSine, int hour, int minute) {
+    public Date(int year, Season season, int day, boolean sunSine, int hour, int minute) {
         this.year = year;
         this.season = season;
         this.day = day;
@@ -24,10 +24,10 @@ public class Date {
     public void setYear(int year) {
         this.year = year;
     }
-    public Seasons getSeason() {
+    public Season getSeason() {
         return season;
     }
-    public void setSeason(Seasons season) {
+    public void setSeason(Season season) {
         this.season = season;
     }
     public int getDay() {

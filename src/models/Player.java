@@ -12,6 +12,7 @@ public class Player extends User {
     private int energy;
     private int maxEnergy;
     private boolean death = false;
+    private Tool equippedTool = null;
     public final BackPack backpack = new BackPack(BackPackMaterial.Default);
     private final HashMap<Skills, Integer> skills = new HashMap<Skills, Integer>();
 
@@ -48,7 +49,7 @@ public class Player extends User {
     }
 
     public int getSkillLevel(Skills skillType) {
-        return skills.get(skillType);
+        return skills.get(skillType);//TODO
     }
 
     public void changeDeath(boolean death) {
@@ -66,4 +67,12 @@ public class Player extends User {
     public void setMaxEnergy(int maxEnergy) {
         this.maxEnergy = maxEnergy;
     }
+
+    public Tool getEquippedTool() {
+        return equippedTool;
+    }
+    public void setEquippedTool(Tool equippedTool) {
+        this.equippedTool = equippedTool;
+    }
 }
+

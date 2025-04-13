@@ -4,7 +4,7 @@ import enums.Items.WateringCanMaterial;
 import models.Item;
 import models.Tool;
 
-public class WateringCan extends Tool {
+public class WateringCan implements Tool {
     private final WateringCanMaterial material;
 
     public WateringCan(WateringCanMaterial material) {
