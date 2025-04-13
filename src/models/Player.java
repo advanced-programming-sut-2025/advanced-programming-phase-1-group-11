@@ -1,7 +1,7 @@
 package models;
 
-import enums.CookingItem;
-import enums.CraftingItem;
+import enums.FoodType;
+import enums.CraftableItemType;
 import enums.Items.BackPackMaterial;
 import enums.Skills;
 import models.Items.BackPack;
@@ -20,8 +20,8 @@ public class Player extends User {
     private int x;
     private int y;
 
-    private ArrayList<CraftingItem> learntCraftingItems = new ArrayList<>();
-    private ArrayList<CookingItem> learntCookingItems = new ArrayList<>();
+    private ArrayList<CraftableItemType> learntCraftableItemTypes = new ArrayList<>();
+    private ArrayList<FoodType> learntFoodTypes = new ArrayList<>();
 
     public Player(String username, String hashedPassword, String nickname, Email email, boolean gender) {
         super(username, hashedPassword, nickname, email, gender);
@@ -83,28 +83,28 @@ public class Player extends User {
     }
 
 
-    public void learnCraftingItem(CraftingItem craftingItem) {
-        learntCraftingItems.add(craftingItem);
+    public void learnCraftingItem(CraftableItemType craftableItemType) {
+        learntCraftableItemTypes.add(craftableItemType);
     }
 
-    public boolean isCraftingItemLearnt(CraftingItem craftingItem) {
-        return learntCraftingItems.contains(craftingItem);
+    public boolean isCraftingItemLearnt(CraftableItemType craftableItemType) {
+        return learntCraftableItemTypes.contains(craftableItemType);
     }
 
-    public void craft(CraftingItem craftingItem) {
+    public void craft(CraftableItemType craftableItemType) {
         //TODO
     }
 
 
-    public void learnCookingItem(CookingItem cookingItem) {
-        learntCookingItems.add(cookingItem);
+    public void learnCookingItem(FoodType foodType) {
+        learntFoodTypes.add(foodType);
     }
 
-    public boolean isCookingItemLearnt(CookingItem cookingItem) {
-        return learntCookingItems.contains(cookingItem);
+    public boolean isCookingItemLearnt(FoodType foodType) {
+        return learntFoodTypes.contains(foodType);
     }
 
-    public void cook (CookingItem cookingItem) {
+    public void cook (FoodType foodType) {
         // TODO
     }
 
