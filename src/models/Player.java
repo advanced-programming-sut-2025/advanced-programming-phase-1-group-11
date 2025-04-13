@@ -1,5 +1,7 @@
 package models;
 
+import enums.CookingItem;
+import enums.CraftingItem;
 import enums.Items.BackPackMaterial;
 import enums.Skills;
 import models.Items.BackPack;
@@ -15,7 +17,11 @@ public class Player extends User {
     private Tool equippedTool = null;
     public final BackPack backpack = new BackPack(BackPackMaterial.Default);
     private final HashMap<Skills, Integer> skills = new HashMap<Skills, Integer>();
+    private int x;
+    private int y;
 
+    private ArrayList<CraftingItem> learntCraftingItems = new ArrayList<>();
+    private ArrayList<CookingItem> learntCookingItems = new ArrayList<>();
 
     public Player(String username, String hashedPassword, String nickname, Email email, boolean gender) {
         super(username, hashedPassword, nickname, email, gender);
@@ -71,8 +77,41 @@ public class Player extends User {
     public Tool getEquippedTool() {
         return equippedTool;
     }
+
     public void setEquippedTool(Tool equippedTool) {
         this.equippedTool = equippedTool;
     }
+
+
+    public void learnCraftingItem(CraftingItem craftingItem) {
+        learntCraftingItems.add(craftingItem);
+    }
+
+    public boolean isCraftingItemLearnt(CraftingItem craftingItem) {
+        return learntCraftingItems.contains(craftingItem);
+    }
+
+    public void craft(CraftingItem craftingItem) {
+        //TODO
+    }
+
+
+    public void learnCookingItem(CookingItem cookingItem) {
+        learntCookingItems.add(cookingItem);
+    }
+
+    public boolean isCookingItemLearnt(CookingItem cookingItem) {
+        return learntCookingItems.contains(cookingItem);
+    }
+
+    public void cook (CookingItem cookingItem) {
+        // TODO
+    }
+
+    public void eat (Food food) {
+        // TODO
+    }
+
+
 }
 

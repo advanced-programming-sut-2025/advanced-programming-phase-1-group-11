@@ -1,4 +1,8 @@
 package views;
 
-public class RegisterMenu {
+import java.util.Scanner;
+
+public class RegisterMenu extends AppMenu {
+    @Override
+    public void check(Scanner scanner){};
 }

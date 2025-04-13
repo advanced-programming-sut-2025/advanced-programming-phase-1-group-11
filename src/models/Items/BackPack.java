@@ -6,7 +6,7 @@ import models.Tool;
 
 import java.util.ArrayList;
 
-public class BackPack implements Tool {
+public class BackPack implements Item {
     private final BackPackMaterial material;
     private final ArrayList<Item> items = new ArrayList<>();
 
@@ -35,5 +35,8 @@ public class BackPack implements Tool {
     public void removeItem(Item item) {
         items.remove(item);
     }
+
+
+
 
 }
