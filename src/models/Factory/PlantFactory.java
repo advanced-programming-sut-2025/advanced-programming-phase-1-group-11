@@ -1,13 +1,10 @@
 package models.Factory;
 
-import enums.PlantsName;
-import enums.SeedName;
+import enums.SeedType;
 import models.Plant;
 
-import java.util.List;
-
 public class PlantFactory {
-    public static Plant createPlant(SeedName name) {
+    public static Plant createPlant(SeedType name) {
         return null;
     }
 }

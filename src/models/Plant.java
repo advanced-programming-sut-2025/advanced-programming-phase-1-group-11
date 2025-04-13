@@ -1,6 +1,6 @@
 package models;
 
-import enums.PlantsName;
+import enums.PlantsType;
 import enums.Season;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class Plant extends Cell{
     private int daysToNextLevel;
     private ArrayList<Integer> stages;
     private int baseSellPrice;
-    private PlantsName name;
+    private PlantsType name;
     private Seed source;
     private boolean oneTime;
     private int regrowthTime;
@@ -28,7 +28,7 @@ public class Plant extends Cell{
             int daysToNextLevel,
             ArrayList<Integer> stages,
             int baseSellPrice,
-            PlantsName name,
+            PlantsType name,
             Seed source,
             boolean oneTime,
             int regrowthTime,

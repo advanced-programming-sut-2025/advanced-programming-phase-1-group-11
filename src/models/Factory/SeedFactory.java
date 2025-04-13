@@ -1,10 +1,10 @@
 package models.Factory;
 
-import enums.SeedName;
+import enums.SeedType;
 import models.Seed;
 
 public class SeedFactory {
-    public static Seed creatSeed(SeedName name) {
+    public static Seed creatSeed(SeedType name) {
         return null;
     }
 }

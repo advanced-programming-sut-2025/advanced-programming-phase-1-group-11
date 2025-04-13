@@ -1,9 +1,9 @@
 package models;
 
-import enums.AnimalName;
+import enums.AnimalType;
 
 public class Animal {
-    private AnimalName name;
+    private AnimalType name;
     private String nickName;
     private int friendshipRating;
 
