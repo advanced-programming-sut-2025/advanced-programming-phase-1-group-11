@@ -1,6 +1,6 @@
 package enums;
 
-public enum Places {
+public enum Place {
     Home,
     Outside,
     GreenHouse,

@@ -1,7 +1,6 @@
-package models.Items;
+package models.Items.Tool;
 
 import enums.Items.SeytheMaterial;
-import models.Item;
 import models.Tool;
 
 public class Scythe implements Tool {
@@ -13,5 +12,11 @@ public class Scythe implements Tool {
 
     public SeytheMaterial getMaterial() {
         return material;
+    }
+
+
+    @Override
+    public void use(int x, int y) {
+
     }
 }

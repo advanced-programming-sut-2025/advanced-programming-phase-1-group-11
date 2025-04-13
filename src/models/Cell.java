@@ -1,5 +1,7 @@
 package models;
 
-public class Cell {
+import enums.Place;
 
+public class Cell {
+    private Place place;
 }

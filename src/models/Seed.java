@@ -1,4 +1,8 @@
 package models;
 
-public class Seed {
+import enums.SeedName;
+
+public class Seed implements Item{
+    private SeedName name;
+    private boolean isMixed;
 }

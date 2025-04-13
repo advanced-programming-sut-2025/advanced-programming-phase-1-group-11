@@ -5,7 +5,7 @@ import enums.Season;
 
 import java.util.ArrayList;
 
-public class Plant {
+public class Plant extends Cell{
 
     private boolean isVegetable;
     private int plantLevel;
@@ -23,7 +23,7 @@ public class Plant {
     private boolean canBecomeGiant;
 
     public Plant(
-            boolean isVegetable,
+            boolean isTree,
             int plantLevel,
             int daysToNextLevel,
             ArrayList<Integer> stages,
@@ -37,7 +37,7 @@ public class Plant {
             int baseHealth,
             ArrayList<Season> seasons,
             boolean canBecomeGiant) {
-        this.isVegetable = isVegetable;
+        this.isVegetable = isTree;
         this.plantLevel = plantLevel;
         this.daysToNextLevel = daysToNextLevel;
         this.stages = stages;
