@@ -112,6 +112,9 @@ public class Player extends User {
         // TODO
     }
 
+    public void walk () {
+
+    }
 
 }
 
