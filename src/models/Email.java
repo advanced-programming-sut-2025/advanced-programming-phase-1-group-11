@@ -11,6 +11,8 @@ public class Email {
         this.TLD = TLD;
     }
 
+    // Man Hadiam
+
     public void setName(String name) {
         this.name = name;
     }
