@@ -1,10 +1,7 @@
 package views;
-
 import enums.CommandType;
 import java.util.Scanner;
-
 public class LoginMenu extends AppMenu {
-
     @Override
     public void check(Scanner scanner) {
         while (true) {
@@ -19,7 +16,7 @@ public class LoginMenu extends AppMenu {
                     handleForgetPassword(scanner, input);
                     break;
                 case ANSWER:
-                    System.out.println("⚠ The 'answer' command should be used after 'forget password'.");
+                    System.out.println(" The 'answer' command should be used after 'forget password'.");
                     break;
                 case EXIT:
                     return;
