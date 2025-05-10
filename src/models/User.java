@@ -39,7 +39,7 @@ public class User {
     public Email getEmail() {
         return email;
     }
-    public void setEmail(Email email) {
+    public void setEmail(String email) {
         this.email = email;
     }
     public boolean GetGender() {
