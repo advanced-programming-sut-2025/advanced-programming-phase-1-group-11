@@ -1,6 +1,6 @@
 package models.Items.Tool;
 
-import enums.Items.SeytheMaterial;
+import enums.Tools.SeytheMaterial;
 import models.Tool;
 
 public class Scythe implements Tool {

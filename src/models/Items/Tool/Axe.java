@@ -1,6 +1,6 @@
 package models.Items.Tool;
 
-import enums.Items.AxeMaterial;
+import enums.Tools.AxeMaterial;
 import models.Tool;
 
 public class Axe implements Tool {

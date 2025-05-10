@@ -1,8 +1,7 @@
 package models.Items;
 
-import enums.Items.BackPackMaterial;
+import enums.Tools.BackPackMaterial;
 import models.Item;
-import models.Tool;
 
 import java.util.ArrayList;
 

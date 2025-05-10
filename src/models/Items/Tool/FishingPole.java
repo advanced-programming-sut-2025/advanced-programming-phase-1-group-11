@@ -1,6 +1,6 @@
 package models.Items.Tool;
 
-import enums.Items.FishingPoleMaterial;
+import enums.Tools.FishingPoleMaterial;
 import models.Tool;
 
 public class FishingPole implements Tool {

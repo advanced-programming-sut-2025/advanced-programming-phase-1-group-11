@@ -1,6 +1,6 @@
 package models.Items.Tool;
 
-import enums.Items.HoeMaterial;
+import enums.Tools.HoeMaterial;
 import models.Tool;
 
 public class Hoe implements Tool {

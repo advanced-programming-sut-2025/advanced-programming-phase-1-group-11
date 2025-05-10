@@ -1,6 +1,6 @@
 package models.Items.Tool;
 
-import enums.Items.PickaxeMaterial;
+import enums.Tools.PickaxeMaterial;
 import models.Tool;
 
 

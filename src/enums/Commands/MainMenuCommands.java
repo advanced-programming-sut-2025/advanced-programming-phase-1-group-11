@@ -3,11 +3,11 @@ package enums.Commands;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public enum ProfileMenuCommands implements Command {
+public enum MainMenuCommands implements Command {
     ;
     private final String pattern;
 
-    ProfileMenuCommands(String pattern) {
+    MainMenuCommands(String pattern) {
         this.pattern = pattern;
     }
 
@@ -19,4 +19,6 @@ public enum ProfileMenuCommands implements Command {
         }
         return null;
     }
+
+
 }

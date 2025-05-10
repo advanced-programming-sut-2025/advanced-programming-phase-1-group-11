@@ -1,6 +1,6 @@
 package models.Items.Tool;
 
-import enums.Items.WateringCanMaterial;
+import enums.Tools.WateringCanMaterial;
 import models.Tool;
 
 public class WateringCan implements Tool {

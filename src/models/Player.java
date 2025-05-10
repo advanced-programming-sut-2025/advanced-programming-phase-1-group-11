@@ -2,7 +2,7 @@ package models;
 
 import enums.FoodType;
 import enums.CraftableItemType;
-import enums.Items.BackPackMaterial;
+import enums.Tools.BackPackMaterial;
 import enums.Skills;
 import models.Items.BackPack;
 

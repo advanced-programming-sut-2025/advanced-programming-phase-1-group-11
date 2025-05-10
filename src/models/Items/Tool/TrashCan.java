@@ -1,6 +1,6 @@
 package models.Items.Tool;
 
-import enums.Items.TrashCanMaterial;
+import enums.Tools.TrashCanMaterial;
 import models.Tool;
 
 public class TrashCan implements Tool {
